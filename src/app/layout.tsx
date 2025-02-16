@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import "./globals.css";
 import { useState } from "react";
+import {Providers} from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +45,9 @@ export default function RootLayout({
           </div>
         )}
         <main className="pt-20">
+          <Providers>
           {children}
+          </Providers>
         </main>
       </body>
     </html>
