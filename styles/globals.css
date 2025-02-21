@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 body {
-    background-image: url('/pictures/51380.jpg');
+    background-image: url('../app/pictures/51380.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f0f0f0; /* Fallback light color */
+    background-attachment: fixed;
+    color: white !important; /* Ensure text is visible on dark background */
 }
+
